@@ -1,0 +1,157 @@
+:root {
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #1d2438;
+  background: #eef1fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #f5f8ff, #e9eefb 45%, #dfe7fb);
+}
+
+#app {
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.app-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+header {
+  padding: 0.6rem 0.2rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #4d62d8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+h1 {
+  margin: 0.25rem 0;
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+}
+
+.subhead {
+  margin: 0;
+  color: #425078;
+}
+
+.card {
+  background: #ffffffcc;
+  border: 1px solid #d7def8;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(58, 71, 122, 0.09);
+}
+
+.controls-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.file-input {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+input[type='file'] {
+  border: 1px solid #cbd4f9;
+  border-radius: 10px;
+  padding: 0.6rem;
+  background: #f8faff;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.58rem 1rem;
+  background: linear-gradient(135deg, #4f65e4, #6177f0);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.status {
+  margin: 0;
+  color: #4f5f8a;
+}
+
+details {
+  border-top: 1px solid #e2e8ff;
+  padding-top: 0.8rem;
+  color: #33426c;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.preview-wrap {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.preview-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#time-readout {
+  margin: 0;
+  color: #41507a;
+  font-variant-numeric: tabular-nums;
+}
+
+canvas {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #d4dcfa;
+  background: #ecf1ff;
+}
+
+@media (max-width: 640px) {
+  #app {
+    padding: 1rem;
+  }
+
+  .preview-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
